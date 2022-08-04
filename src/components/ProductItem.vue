@@ -57,6 +57,14 @@
 
 <script>
 export default {
-  props: ['product'],
+  name: 'product-item',
+  // props: ['product'],
+
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+  },
 };
 </script>

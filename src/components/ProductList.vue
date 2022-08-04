@@ -13,7 +13,14 @@
 import ProductItem from './ProductItem.vue';
 
 export default {
+  name: 'product-list',
   components: { ProductItem },
-  props: ['products'],
+
+  props: {
+    products: {
+      type: Array,
+      required: true,
+    },
+  },
 };
 </script>
